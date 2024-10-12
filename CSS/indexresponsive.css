@@ -1,0 +1,82 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-main {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .search {
+        width: 100%;
+    }
+    .footer-links-1-main-container {
+        padding: 0px 20px;
+    }
+    .footer-links-1-filter-buttons-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .empty-grid-items {
+        display: none;
+    }
+    .footer-links-2-grid-1000px-sub-container {
+        grid-template-columns: repeat(auto-fill, auto);
+        column-gap: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* Display for smartphones */
+@media (min-width: 280px) and (max-width: 767px) {
+    .header-main {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 15px;
+    }
+    .search {
+        margin: 15px 0px;
+        width: 100%;
+    }
+    #nav-menu {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .products-grid_01-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .footer-links-1-main-container {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .footer-links-1-list-container h2 {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .footer-links-1-list-container:first-child h2 {
+        margin-top: 0px;
+    }
+    .footer-links-1-list-container ul li {
+        text-align: center;
+    }
+    .spacer2 {
+        display: none;
+    }
+    .footer-links-1-filter-buttons-container {
+        flex-direction: column;
+    }
+    .footer-links-1-filter-buttons {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .footer-links-2-grid-1000px-sub-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        width: 100vw;
+    }
+    .empty-grid-items {
+        display: none;
+    }
+}
